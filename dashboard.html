@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Sanctum</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Crimson Text', serif; }
+    .gothic-bg { background: linear-gradient(135deg, #0c0c0c 0%, #1a0000 70%, #0f0f0f 100%); background-attachment: fixed; }
+  </style>
+</head>
+<body class="gothic-bg text-gray-300 min-h-screen flex flex-col">
+  <!-- Cabeçalho com nome e menu -->
+  <header class="bg-black/95 backdrop-blur-md border-b-2 border-red-950">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl text-red-600" style="font-family: 'UnifrakturMaguntia', cursive;">Sanctum</h1>
+      <nav class="space-x-10">
+        <a href="dashboard.html" class="hover:text-red-500 transition">Início</a>
+        <a href="cadastro.html" class="hover:text-red-500 transition">Cadastrar</a>
+        <a href="estoque.html" class="hover:text-red-500 transition">Estoque</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-7xl mx-auto px-6 py-12">
+    <h2 class="text-4xl text-red-500 text-center mb-12">Painel de Controle</h2>
+
+    <!-- Cards com informações gerais -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div class="bg-black/90 rounded-lg p-8 border-2 border-red-950 text-center">
+        <h3 class="text-2xl text-red-500">Total de Produtos</h3>
+        <p class="text-5xl font-bold mt-4">127</p>
+      </div>
+      <div class="bg-black/90 rounded-lg p-8 border-2 border-red-950 text-center">
+        <h3 class="text-2xl text-red-500">Itens em Falta</h3>
+        <p class="text-5xl font-bold mt-4 text-red-400">6</p>
+      </div>
+      <div class="bg-black/90 rounded-lg p-8 border-2 border-red-950 text-center">
+        <h3 class="text-2xl text-red-500">Movimentações Hoje</h3>
+        <p class="text-5xl font-bold mt-4">42</p>
+      </div>
+    </div>
+
+    <!-- Área com avisos -->
+    <div class="bg-black/90 rounded-lg p-10 border-2 border-red-950">
+      <h3 class="text-3xl text-red-500 mb-6">Avisos Importantes</h3>
+      <ul class="space-y-3 text-lg">
+        <li>• Cruz de São Bento Grande: apenas 2 unidades</li>
+        <li>• Novo lote de terços chega amanhã</li>
+        <li>• Procissão no sábado – reforçar velas</li>
+      </ul>
+    </div>
+  </main>
+  <footer class="bg-black/95 border-t-2 border-red-950 py-6 text-center">
+    Sanctum - Artigos Religiosos Góticos
+  </footer>
+</body>
+</html>
